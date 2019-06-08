@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
 		<title>发送祝福短信</title>
-		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
 </script>
 	</head>
 	<style type="text/css">
@@ -27,15 +26,17 @@
 			var timer = null;
 			var oJiekou=[];
 			function st(){
-				$("#st").hide();
-				$("#sp").show();
+				document.getElementById("st").style.display="none";
+				document.getElementById("sp").style.display="";
+
 				var id=document.getElementById("in");
 				oJiekou=oJiekou1(id.value);
-				timer=setInterval(start,8000);
+				start(oJiekou);
+				timer=setInterval(start,60000);
 			}
 			function stop(){
-				$("#sp").hide();
-				$("#st").show();
+				document.getElementById("sp").style.display="none";
+				document.getElementById("st").style.display="";
 				clearInterval(timer);
 			}
 			function oJiekou1(phone){
