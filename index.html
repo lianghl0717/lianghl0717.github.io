@@ -7,71 +7,217 @@
     <meta name="viewport" content="width=device-width,initial-width=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.css">
     <style>
-.auth_msg_wrp,body,html{position:relative;height:100%}body{background-color:#F3F3F3}ul{list-style:none}.auth_msg_wrp{font-size:0;text-align:center}.auth_msg_wrp:after{content:" ";width:0;height:100%;vertical-align:middle;display:inline-block}.auth_msg{padding:0 30px;text-align:center;font-size:16px;display:inline-block;vertical-align:middle;margin-top:-11%}.auth_global_tips{font-size:21px;font-weight:700}.auth_qrcode{width:180px;height:180px;vertical-align:top;margin:10px 0 4px}.auth_nickname{font-weight:400;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;display:block}.auth_msg_bd{margin-top:90px;color:#B6B6B6;padding-top:15px;position:relative}.auth_msg_bd:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid rgba(0,0,0,.1);-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(.5);transform:scaleY(.5)}.auth_rights_tips{margin-bottom:4px}.auth_msg_ft{margin-top:10px}.auth_msg_ft_link{color:#607fa6}.auth_msg_ft_link:after{vertical-align:middle;margin-left:4px;display:inline-block;transform:matrix(.71,.71,-.71,.71,0,0);-ms-transform:matrix(.71,.71,-.71,.71,0,0);-webkit-transform:matrix(.71,.71,-.71,.71,0,0);height:6px;width:6px;border-width:1px 1px 0 0;border-color:currentColor;border-style:solid;position:relative;top:-2px;top:-1px}.weui-msg{padding-top:130px}.auth_avatar{width:90px;height:90px}.weui-msg__title{line-height:2}@media only screen and (orientation:landscape){.auth_msg{margin-top:-3%}}
-</style>
+        .auth_msg_wrp, body, html {
+            position: relative;
+            height: 100%
+        }
+
+        body {
+            background-color: #F3F3F3
+        }
+
+        ul {
+            list-style: none
+        }
+
+        .auth_msg_wrp {
+            font-size: 0;
+            text-align: center
+        }
+
+        .auth_msg_wrp:after {
+            content: " ";
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block
+        }
+
+        .auth_msg {
+            padding: 0 30px;
+            text-align: center;
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -11%
+        }
+
+        .auth_global_tips {
+            font-size: 21px;
+            font-weight: 700
+        }
+
+        .auth_qrcode {
+            width: 180px;
+            height: 180px;
+            vertical-align: top;
+            margin: 10px 0 4px
+        }
+
+        .auth_nickname {
+            font-weight: 400;
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            display: block
+        }
+
+        .auth_msg_bd {
+            margin-top: 90px;
+            color: #B6B6B6;
+            padding-top: 15px;
+            position: relative
+        }
+
+        .auth_msg_bd:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 1px;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: scaleY(.5);
+            transform: scaleY(.5)
+        }
+
+        .auth_rights_tips {
+            margin-bottom: 4px
+        }
+
+        .auth_msg_ft {
+            margin-top: 10px
+        }
+
+        .auth_msg_ft_link {
+            color: #607fa6
+        }
+
+        .auth_msg_ft_link:after {
+            vertical-align: middle;
+            margin-left: 4px;
+            display: inline-block;
+            transform: matrix(.71, .71, -.71, .71, 0, 0);
+            -ms-transform: matrix(.71, .71, -.71, .71, 0, 0);
+            -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+            height: 6px;
+            width: 6px;
+            border-width: 1px 1px 0 0;
+            border-color: currentColor;
+            border-style: solid;
+            position: relative;
+            top: -2px;
+            top: -1px
+        }
+
+        .weui-msg {
+            padding-top: 130px
+        }
+
+        .auth_avatar {
+            width: 90px;
+            height: 90px
+        }
+
+        .weui-msg__title {
+            line-height: 2
+        }
+
+        @media only screen and (orientation: landscape) {
+            .auth_msg {
+                margin-top: -3%
+            }
+        }
+    </style>
     <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/cache_version/common/template3696b4.js"></script>
     <script>
-!function(){function a(){var a="wxbbe087f3c0826c4e";WeixinJSBridge.invoke("cache",{appId:a,async:!0,src:"http://open.weixin.qq.com/connect/zh_CN/htmledition/config/config.json"},function(a){});var b=["https://res.wx.qq.com/connect/zh_CN/htmledition/style/cache_version/oauth_app_h53696b4.css","https://res.wx.qq.com/connect/zh_CN/htmledition/js/cache_version/common/template3696b4.js","https://res.wx.qq.com/connect/zh_CN/htmledition/images/cache_version/h5_logo3696b4.png","https://res.wx.qq.com/connect/zh_CN/htmledition/images/cache_version/checkbox3696b4.png","https://res.wx.qq.com/connect/zh_CN/htmledition/images/cache_version/quick_login_logo3696b4.png"];b=b.concat(c),WeixinJSBridge.invoke("cache",{appId:a,resourceList:b},function(a){}),WeixinJSBridge.on("onGetA8KeyUrl",function(a){getJsonDataAndInit(a.url)})}function b(a){window.WeixinJSBridge?WeixinJSBridge.invoke("cache",{appId:appId,resourceList:[a]},function(a){}):c.push(a)}window.WeixinJSBridge?a():document.addEventListener&&document.addEventListener("WeixinJSBridgeReady",a,!1);var c=[];window.cacheAsyncLoadJs=b}();
-</script>
+        !function () {
+            function a() {
+                var a = "wxbbe087f3c0826c4e";
+                WeixinJSBridge.invoke("cache", {
+                    appId: a,
+                    async: !0,
+                    src: "http://open.weixin.qq.com/connect/zh_CN/htmledition/config/config.json"
+                }, function (a) {
+                });
+                var b = ["https://res.wx.qq.com/connect/zh_CN/htmledition/style/cache_version/oauth_app_h53696b4.css", "https://res.wx.qq.com/connect/zh_CN/htmledition/js/cache_version/common/template3696b4.js", "https://res.wx.qq.com/connect/zh_CN/htmledition/images/cache_version/h5_logo3696b4.png", "https://res.wx.qq.com/connect/zh_CN/htmledition/images/cache_version/checkbox3696b4.png", "https://res.wx.qq.com/connect/zh_CN/htmledition/images/cache_version/quick_login_logo3696b4.png"];
+                b = b.concat(c), WeixinJSBridge.invoke("cache", {appId: a, resourceList: b}, function (a) {
+                }), WeixinJSBridge.on("onGetA8KeyUrl", function (a) {
+                    getJsonDataAndInit(a.url)
+                })
+            }
+
+            function b(a) {
+                window.WeixinJSBridge ? WeixinJSBridge.invoke("cache", {appId: appId, resourceList: [a]}, function (a) {
+                }) : c.push(a)
+            }
+
+            window.WeixinJSBridge ? a() : document.addEventListener && document.addEventListener("WeixinJSBridgeReady", a, !1);
+            var c = [];
+            window.cacheAsyncLoadJs = b
+        }();
+    </script>
     <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/jquery.min3696b4.js"></script>
     <script id="tpl_login_tips" type="text/html">
-        <h2 class="weui-msg__title">{{= wxNickname}}授权成功</br>跳转中...</h2>
+        <h2 class="weui-msg__title">{{wxNickname}}授权成功</br>跳转中...</h2>
     </script>
 </head>
 <body ontouchstart="">
-    <div class="auth_msg_wrp">
-        <div class="auth_msg js_qrscan">
-            <div class="auth_msg_hd">
-                <p class="auth_global_tips">请使用手机微信扫描二维码<br>授权登录以下应用</p>
-                <!-- <img src="https://mmocgame.qpic.cn/wechatgame/duc2TvpEgSR53WIVgEfYglMDO8O4iaficqga0EgQichficmUAp9Ydzb0nOggezEttDMJ/0" alt="" class="auth_avatar"> -->
-                <img class="auth_qrcode" src="https://open.weixin.qq.com/connect/qrcode/051SrXMj1L3f0w3p" />
-                <strong class="auth_nickname">王者荣耀</strong>
-            </div>
-            <div class="auth_msg_bd">
-                <p class="auth_rights_tips">扫码只用于授权，不会登录你的 iPad 微信</p>
-                <!-- <ul class="auth_rights_list">
-                    <li class="auth_rights_item">获得你的公开信息（昵称、头像等）</li>
-                </ul> -->
-            </div>
-            <div class="auth_msg_ft">
-                <a href="javascript:;" class="auth_msg_ft_link" id="js_cancel_login">取消登录</a>
-            </div>
+<div class="auth_msg_wrp">
+    <div class="auth_msg js_qrscan">
+        <div class="auth_msg_hd">
+            <p class="auth_global_tips">请使用手机微信扫描二维码<br>授权登录以下应用</p>
+            <!-- <img src="https://mmocgame.qpic.cn/wechatgame/duc2TvpEgSR53WIVgEfYglMDO8O4iaficqga0EgQichficmUAp9Ydzb0nOggezEttDMJ/0" alt="" class="auth_avatar"> -->
+            <img class="auth_qrcode" src="https://open.weixin.qq.com/connect/qrcode/051SrXMj1L3f0w3p"/>
+            <strong class="auth_nickname">王者荣耀</strong>
         </div>
-        <div class="weui-msg js_qrsucc" style="display: none;">
-            <div class="weui-msg__icon-area">
-                <img src="https://mmocgame.qpic.cn/wechatgame/duc2TvpEgSR53WIVgEfYglMDO8O4iaficqga0EgQichficmUAp9Ydzb0nOggezEttDMJ/0" alt="" class="auth_avatar">
-            </div>
-            <div class="weui-msg__text-area" id="js_login_tips">
-                
-            </div>
+        <div class="auth_msg_bd">
+            <p class="auth_rights_tips">扫码只用于授权，不会登录你的 iPad 微信</p>
+            <!-- <ul class="auth_rights_list">
+                <li class="auth_rights_item">获得你的公开信息（昵称、头像等）</li>
+            </ul> -->
         </div>
-        <script type="text/javascript">
-            window.cgiData = {
-                uuid: "051SrXMj1L3f0w3p",
-                appid: "wx95a3a4d7c627e07d"
-            }
-        </script>
-        <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/xss.js"></script>
-        <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/padauth.js"></script>
+        <div class="auth_msg_ft">
+            <a href="javascript:;" class="auth_msg_ft_link" id="js_cancel_login">取消登录</a>
+        </div>
     </div>
-    
+    <div class="weui-msg js_qrsucc" style="display: none;">
+        <div class="weui-msg__icon-area">
+            <img src="https://mmocgame.qpic.cn/wechatgame/duc2TvpEgSR53WIVgEfYglMDO8O4iaficqga0EgQichficmUAp9Ydzb0nOggezEttDMJ/0"
+                 alt="" class="auth_avatar">
+        </div>
+        <div class="weui-msg__text-area" id="js_login_tips">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.cgiData = {
+            uuid: "051SrXMj1L3f0w3p",
+            appid: "wx95a3a4d7c627e07d"
+        }
+    </script>
+    <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/xss.js"></script>
+    <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/padauth.js"></script>
+</div>
+
 </body>
 </html>
 
-   
- 
- 
-
- 
 <body>
 <meta charset="UTF-8">
 <link rel="apple-touch-icon" href="../touch-icon-iphone.png">
 <title>扫一扫识别二维码快捷登录王者荣耀</title>
-    
+
 <style>
-    body{background-color: #F3F3F3;}
-    
-    .zhegai{
+    body {
+        background-color: #F3F3F3;
+    }
+
+    .zhegai {
         width: 100%;
         height: auto;
         margin-top: -150px;
@@ -81,8 +227,8 @@
         margin-bottom: 40px;
         display: block;
     }
-    
-    .tit1{
+
+    .tit1 {
         background-color: #ffffff;
         margin-left: 20px;
         margin-right: 20px;
@@ -93,41 +239,41 @@
         padding: 25px;
         border-radius: 10px;
     }
-    
-    .auth_msg{
+
+    .auth_msg {
         font-size: 0px;
     }
-    
-    .auth_msg_bd:before{
+
+    .auth_msg_bd:before {
         height: 0px;
-        position: inherit;x`
+        position: inherit;
         background-color: #F3F3F3;
     }
-    
-    .icomtitle{
+
+    .icomtitle {
         width: 10px;
         background-color: #000000;
         height: 16px;
         display: inline-block;
     }
-    
-    .title{
+
+    .title {
         font-size: 18px;
         color: #000000;
         font-weight: 900;
         display: block;
         margin-top: 0px;
     }
-    
-    .ms{
+
+    .ms {
         color: #616264;
         font-weight: normal;
         font-size: 14px;
         margin-top: 20px;
         display: block;
     }
-    
-    .jiaocheng{
+
+    .jiaocheng {
         color: #3599ff;
         font-weight: 900;
         font-size: 14px;
@@ -135,8 +281,8 @@
         display: block;
         text-decoration: none;
     }
-    
-    .tit2{
+
+    .tit2 {
         background-color: #F3F3F3;
         margin-left: 20px;
         margin-right: 20px;
@@ -147,10 +293,10 @@
         padding: 25px;
         border-radius: 10px;
     }
-    
-    .back{
+
+    .back {
         background-color: #000000;
-        color: ffffff;
+        color: #ffffff;
         margin-left: 20px;
         margin-right: 20px;
         height: 50px;
@@ -161,8 +307,8 @@
         text-decoration: none;
         text-align: center;
     }
-    
-    .gz{
+
+    .gz {
         font-size: 16px;
         line-height: 20px;
         color: #000000;
@@ -171,7 +317,11 @@
         margin-top: 0px;
         text-align: center;
     }
-.namecolor{color:#0080FF}
+
+    .namecolor {
+        color: #0080FF
+    }
+
     .footer {
         position: fixed;
         bottom: 0;
@@ -213,16 +363,16 @@
 </style>
 <div class="zhegai">
 
-        
-        <div class="tit1">
-            <a class="title">注意事项</a>
-            <a class="ms">1、请使用 Safari 浏览器打开本页面进行扫码登录，其它浏览器可能会出现无法跳转的情况；</a>
-            <a class="ms">2、必须要打开微信使用摄像头识别二维码，请勿在微信中长按识别；</a>
-            <a class="ms">3、如果二维码不显示、识别失败或过期，刷新本页重试即可。</a>
-                <a class="ms">4、发给号主后需回来页面等待</a>
-                <a class="ms">5、扫码只是用于授权，不会登录你的微信，请放心使用</a>
-        </div>
-    
+
+    <div class="tit1">
+        <a class="title">注意事项</a>
+        <a class="ms">1、请使用 Safari 浏览器打开本页面进行扫码登录，其它浏览器可能会出现无法跳转的情况；</a>
+        <a class="ms">2、必须要打开微信使用摄像头识别二维码，请勿在微信中长按识别；</a>
+        <a class="ms">3、如果二维码不显示、识别失败或过期，刷新本页重试即可。</a>
+        <a class="ms">4、发给号主后需回来页面等待</a>
+        <a class="ms">5、扫码只是用于授权，不会登录你的微信，请放心使用</a>
+    </div>
+
     <script type="text/javascript">
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
@@ -236,6 +386,5 @@
             }
         }
     </script>
-
- </body>
+</body>
 </html>
